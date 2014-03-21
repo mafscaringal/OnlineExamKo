@@ -1,0 +1,15 @@
+Security Issues
+
+You must always be concerned with protecting sensitive data. This not only includes your API credentials, but also any data exposed in a client's browser, such as data about the transaction stored in cookies.
+
+    In the simplest examples, such as the ones provided by PayPal to demonstrate Express Checkout usage, the API credentials may be exposed. Thus, if you copy code from examples or SDKs, you should always review your website for security issues and correct them before you go live with your website.
+    Encrypt all saved information related to the PayPal transaction. For example, if you keep order status information in a cookie, make sure the information is encrypted.
+    Use a secure transmission protocol, such as HTTPS to transfer information between your site and PayPal. Do not use HTTP or insecure cURL.
+
+
+
+
+Sandbox environment
+    The Sandbox is a virtual testing environment where you utilize fictitious user accounts to make calls to the PayPal operations without affecting any real PayPal users or their live PayPal accounts.
+Production environment
+    The production environment is the live environment where the PayPal operation calls you make affect the accounts of real PayPal users. 
